@@ -1,12 +1,19 @@
 import './App.css';
-import Button from '@material-ui/core/Button';
+import Blog from './Pages/Blog/Blog';
+import Contact from './Pages/Contact/Contact';
+import HomePage from './Pages/HomePage/HomePage';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className='App'>
-      <Button variant='contained' color='primary'>
-        Hello World
-      </Button>
+      <Router>
+        <Switch>
+          <Route path='/' exact component={HomePage} />
+          <Route path='/blog' component={Blog} />
+          <Route path='/contact' component={Contact} />
+        </Switch>
+      </Router>
     </div>
   );
 }
