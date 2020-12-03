@@ -7,9 +7,11 @@ import './Header.css';
 const Header = () => {
   return (
     <Grid container={true} className='headerContainer'>
-      <Grid item={true} xs={6}></Grid>
-      <Grid container={true} item={true} xs={6} className='navItemContainer'>
-        <ButtonGroup variant='text' color='primary' aria-label='text primary button group'>
+      <Grid container={true} item={true} xs={6} className='logoContainer'>
+        <Grid className='logo'></Grid>
+      </Grid>
+      <Grid container={true} item={true} xs={6} className='navItemsContainer'>
+        <ButtonGroup variant='text' aria-label='text primary button group'>
           <Button>
             <NavLink exact to='/' activeClassName='current' className='navLink'>
               Home

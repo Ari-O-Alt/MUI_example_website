@@ -2,10 +2,26 @@
   height: 150px;
 }
 
-.navItemContainer {
-  justify-content: center;
+.navItemsContainer {
+  justify-content: flex-end;
+  padding: 20px;
 }
 
 .navLink {
   text-decoration: none;
+  color: #000;
+}
+
+.logoContainer {
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  background-image: url('../../Images/Zebra-Head.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
