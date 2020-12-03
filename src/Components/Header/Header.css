@@ -1,0 +1,11 @@
+.headerContainer {
+  height: 150px;
+}
+
+.navItemContainer {
+  justify-content: center;
+}
+
+.navLink {
+  text-decoration: none;
+}
